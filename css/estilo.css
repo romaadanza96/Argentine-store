@@ -1,0 +1,337 @@
+@import url(font.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 130px;
+    background-color: #590209;
+}
+
+/* Button */
+.btn-food {
+    width: 50%;
+    background-color: #0D0D0D;
+    color: white;
+    font-family: "bebas";
+    font-size: 25px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 0;
+    text-decoration: none;
+    transition: .5s;
+}
+
+h1 {
+    font-family: "bebas";
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/* modal */
+.modal-content {
+    border: 5px solid #D9183B;
+    border-radius: 5px;
+}
+
+.modal-arg h5 {
+    font-family: "bebas";
+    font-size: 35px;
+}
+
+.modal-arg-body {
+    font-family: "bebas";
+    font-size: 25px;
+}
+
+.btn-food:hover {
+    background-color: #D9183B;
+    transition: .5s;
+}
+
+.img-nav {
+    width: 10%;
+    border: 5px solid #590209;
+    border-radius: 2rem;
+}
+
+.navbar {
+    font-family: "bebas";
+    font-size: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #ece1e1;
+    border-bottom: 5px solid #0D0D0D;
+    transition: .5s;
+}
+
+.nav-link.active:hover {
+    color: #BF0413;
+    transition: .5s;
+}
+
+.navbar-toggler-icon {
+    color: #0D0D0D;
+}
+
+.container-carousel {
+    background-color: black;
+}
+
+/* Header banner*/
+.banner {
+    position: relative;
+    width: 100%;
+    /*     height: 350px; */
+    height: 600px;
+    overflow: hidden;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .black-screen {
+    /*     display: cell; */
+    position: absolute;
+    background-color: #00000065;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 99999;
+}
+
+.maps-google {
+    width: 100%;
+    height: 600px;
+    max-height: 50%;
+    border: 0;
+}
+
+.banner h1 {
+    padding-top: 7%;
+    font-family: "bebas";
+    color: #ffffff;
+    /* anim */
+    animation-name: argen-title;
+    animation-duration: 2s;
+}
+
+.banner p {
+    font-family: "bebas";
+    margin-top: 10px;
+    color: white;
+    /* anim */
+    animation-name: argen-title;
+    animation-duration: 2s;
+}
+
+/* Anima */
+@keyframes argen-title {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+/* Content */
+.content-food {
+    width: 100%;
+    /*    padding: 30px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #590209;
+}
+
+.item {
+    font-family: "bebas";
+    width: 25%;
+    min-height: 250px;
+    /*     min-width: 100%; */
+    color: white;
+    margin: 30px;
+    /*     padding: 20px; */
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #D9183B;
+    border-radius: 10px;
+    /* animation */
+    animation-name: itemmove;
+    animation-duration: 2s;
+}
+
+@keyframes itemmove {
+    0% {
+        /*         width:0; */
+        transform: scale(0);
+        -webkit-filter: blur(0);
+    }
+
+    50% {
+        -webkit-filter: blur(5);
+    }
+
+    100% {
+        /*         width: 25%; */
+        transform: scale(1);
+        -webkit-filter: blur(0);
+    }
+}
+
+.item figure {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00000083;
+    z-index: 99;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-know {
+    text-align: center;
+    margin: auto;
+}
+
+.banner-know {
+    font-family: "bebas";
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0D0D0D;
+    color: rgb(255, 255, 255);
+    /*     padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact {
+    width: 50%;
+    padding: 20px;
+}
+
+.social {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Contact Form */
+.content-contact h1 {
+    color: white;
+    font-family: "bebas";
+    text-align: center;
+}
+
+.content-contact {
+    width: 100%;
+    background-color: #590209;
+}
+
+.form-food {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.form-food label {
+    font-family: "bebas";
+    color: white;
+    font-size: 30px;
+}
+
+.form-food label,
+.form-food input,
+.form-food textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+}
+
+.form-food input,
+.form-food textarea {
+    height: 50px;
+    border: 5px solid #BF0413;
+    border-radius: 30px;
+}
+
+.form-food input[type=text],
+.form-food input[type=tel],
+.form-food input[type=email],
+textarea {
+    font-family: "bebas";
+    font-size: 30px;
+    padding: 30px;
+}
+
+.form-food input[type=submit] {
+    height: auto;
+}
+
+/* .form-food input[type=submit]{
+    width: 50%;
+} */
+/* Responsive */
+@media(max-width:1500px) {
+    .navbar-collapse {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:992px) {
+
+    /* BODY */
+    body {
+        padding-top: 75px;
+    }
+
+    /* NAVBAR */
+    .img-nav {
+        display: none;
+    }
+
+    /* Header */
+
+    .banner {
+        height: 300px;
+    }
+
+    /* Content */
+    .item {
+        width: 100%;
+    }
+
+    /* footer */
+    .contact {
+        width: 100%;
+    }
+
+    .social {
+        width: 100%;
+    }
+}

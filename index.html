@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="descripcion" content="Restaurante de comida rapida argentina">
+  <meta name="keywords" content="restaurante, comida, comida rapida, fast food">
+  <title>Proyecto Choripan</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="img-nav" src="img/ACB-del-choripan-1.jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="sections/locales.html">Locales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sections/paraniños.html">Para niños</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sections/sobrenosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sections/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- BOOSTRAP CAROUSEL -->
+    <div class="container-fluid container-carousel">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pexels-photo-8479696.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/istockphoto-1071118944-612x612.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ARCHI_905974.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- BOOSTRAP CAROUSEL -->
+  </header>
+  <!-- Content -->
+  <div class="content-food container-fluid">
+    <!-- Items -->
+    <div class="item">
+      <figure>
+        <h2>Choripanes</h2>
+        <p>Menú de choripanes con papas fritas o puré de papas y gaseosa, Fernet o Cerveza.</p>
+        <button type="button" class="btn-food" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ver menú
+        </button>
+      </figure>
+      <img src="img/1.jpg" alt="">
+    </div>
+    <!-- Modal 1 -->
+    <div class="modal fade modal-arg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Disfruta de
+              nuestro choripanes que son los mejores!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-arg-body">
+            Mejores promociones en todos los choripanes de la casa!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-food text-center w-50 m-auto p-3" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Item 2 -->
+    <div class="item">
+      <figure>
+        <h2>Milanesas</h2>
+        <p>Menú de milanesas con papas fritas o puré de papas y gaseosa, Fernet o Cerveza.</p>
+        <!-- <a class="btn-food" href="">Ver menú</a> -->
+        <button type="button" class="btn-food" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          Ver menú
+        </button>
+      </figure>
+      <img src="img/2.jpg" alt="">
+    </div>
+    <!-- Modal 2-->
+    <div class="modal fade modal-arg " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Disfruta de
+              nuestras milanesas que son las mejores!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-arg-body">
+            Mejores promociones en todas las milanesas de la casa!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-food text-center w-50 m-auto p-3" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <div class="item">
+      <figure>
+        <h2>Parrilla</h2>
+        <p>Menú de Parrilla con papas fritas o puré de papas y gaseosa, Fernet o Cerveza.</p>
+        <!--      <a class="btn-food" href="">Ver menú</a> -->
+        <button type="button" class="btn-food" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          Ver menú
+        </button>
+      </figure>
+      <img src="img/filete-res-parrilla-vegetales-parrilla-llamas_126277-15.webp" alt="">
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Disfruta de
+              nuestra parrilla!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Mejores promociones en la parrilla!!!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-food text-center w-50 m-auto p-3" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Item 4 -->
+    <div class="item">
+      <figure>
+        <h2>Desayunos</h2>
+        <p>Menú de desayunos.</p>
+        <!--   <a class="btn-food" href="">Ver menú</a> -->
+        <button type="button" class="btn-food" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+          Ver menú
+        </button>
+      </figure>
+      <img src="img/depositphotos_22452585-stock-photo-typical-argentinean-breakfast.jpg" alt="">
+    </div>
+    <!-- Items -->
+    <!-- MODAL 4 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Ddisfruta del
+              mejor desayuno!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Mejores promociones en medialunas y tostadas!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-food text-center w-50 m-auto p-3" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="contact">
+      <h2>¿Queres contactarte con nosotros?</h2>
+      <p>Escribinos por si tenés alguna duda, algo que quieras mejorar del servicio o si querés trabajar con nosotros.
+      </p>
+      <a href="contact.html">Contactános</a>
+    </div>
+    <div class="social">
+      <p>Te invitamos a que sigas recorriendo nuestra página para que te lleves nuevas impresiones!!! :)
+      </p>
+    </div>
+  </div>
+  <!-- JS -->
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
